@@ -1,0 +1,726 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", serif;
+    }
+
+    body {
+        font-family: "Poppins", serif;
+        font-style: normal;
+        line-height: 1.6;
+        background-color: #F9F9F9;
+        color: #333;
+    }
+
+    .py-5 {
+        padding-bottom: 3rem !important;
+    }
+
+    header,
+    .portada-main,
+    .header-main,
+    .logo-main,
+    .portal-transparencia {
+        width: 100%;
+    }
+
+    .portada-main picture img {
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        /* Adaptar la imagen */
+    }
+
+    .header-main {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .logo-main,
+    .portal-transparencia {
+        position: absolute;
+    }
+
+    .logo-main a img {
+        display: block;
+        width: 250px;
+        height: auto;
+    }
+
+    .portal-transparencia a img {
+        display: block;
+        width: 95px;
+        height: auto;
+        float: right;
+    }
+
+    .main-imagen {
+        margin-top: 5px;
+    }
+
+
+    .fondo-degradado {
+        position: absolute;
+        height: 246px;
+        margin-bottom: -300px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(34, 68, 52, 1), rgba(34, 68, 52, 0.0));
+    }
+
+    .fondo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(238, 190, 69, 0.0));
+    }
+
+    /* MENU NAV */
+    .group-button-navbar {
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        transform: translateY(100%);
+        align-items: flex-start;
+        z-index: 1;
+    }
+
+    .group-button-navbar button {
+        position: relative;
+        background-color: rgba(0, 100, 0, 1);
+        color: rgb(255, 255, 255);
+        width: 49px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+        overflow: hidden;
+        padding: 0px 10px;
+        margin: 5px 0px;
+        transition: 0.3s;
+    }
+
+    .btn-transparent {
+        cursor: pointer;
+        background-color: transparent;
+        opacity: 0.9;
+        /* 90% de opacidad */
+        transition: opacity 0.3s;
+        border: none;
+        /* Elimina el borde */
+        outline: none;
+        /* Quita el contorno al hacer focus */
+    }
+
+    .btn-transparent:hover {
+        opacity: 1;
+        /* Hace el botón completamente visible al pasar el mouse */
+    }
+
+    #menu_unu,
+    #user_unu,
+    #repositorios_unu {
+        display: none;
+    }
+
+    /* RECTOR Y VICERRECTORES ACADEMICOS */
+
+    .carousel-slide {
+        display: flex;
+        width: 400%;
+        height: 100%;
+        transition: transform 0.9s ease-in-out;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Imagen de cuadro */
+    .portada-nueva {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .portada-nueva img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* texto */
+    .autoridades {
+        position: absolute;
+        top: 63%;
+        left: 69%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        width: 70%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    /* Estilo del título h2 */
+    .texto-autoridad {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: justify;
+    }
+
+    .texto-autoridad h2,
+    .texto-autoridad h3 {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .texto-autoridad h2 {
+        font-size: 15px;
+    }
+
+    .texto-autoridad h3 {
+        font-size: 10px;
+    }
+
+    /* Estilo del párrafo */
+    .descripcion-autoridad p {
+        margin-top: 8px;
+        width: 220px;
+        font-size: 10px;
+        line-height: 1.3;
+        text-align: right;
+    }
+
+    /* Dropdowns */
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+
+    .dropdown-toggle {
+        background-color: #ffffff;
+        margin-top: 5%;
+        border: 0.1px solid #D6E5D6;
+        ;
+        padding: 5px 20px;
+        font-size: 18px;
+        border-radius: .60rem;
+        display: flex;
+        cursor: pointer;
+        width: 92vw;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .dd-button::after {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        border-top: .3em solid #141111;
+        border-right: .3em solid transparent;
+        border-left: .3em solid transparent;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .dd-button:hover {
+        background-color: #eeeeee;
+    }
+
+    .dd-input {
+        display: none;
+    }
+
+    .dd-input+.dd-menu {
+        display: none;
+    }
+
+    .dd-input:checked+.dd-menu {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .dd-menu li {
+        padding: 10px 15px;
+        cursor: pointer;
+        border: 0.5px solid rgb(170, 231, 194);
+        border-radius: .60rem;
+        margin-bottom: 10px;
+    }
+
+    .dd-menu li a {
+        display: block;
+        margin: -10px -20px;
+        padding: 10px 20px;
+    }
+
+    .dd-menu li::marker {
+        content: none;
+    }
+
+    /*VIDEO*/
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        align-items: center;
+        position: relative;
+    }
+
+
+    /* === START PREGRADO - NUESTRA FACULTADES === */
+    .green-linear {
+        content: '';
+        width: 30px;
+        height: 4.6px;
+        background-color: rgba(0, 100, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .contenedor-titulos {
+        line-height: 22px;
+        color: rgba(0, 100, 0, 1)
+    }
+
+    .contenedor-titulos h4 {
+        font-size: 0.875rem;
+        /* 14px */
+        font-weight: 600;
+    }
+
+    .contenedor-titulos h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+    .fondo-degradado-verde {
+        position: absolute;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        filter: blur(54px);
+        height: 70px;
+        width: 100%;
+        background-color: rgb(0 100 0 / 39%);
+        /* background: linear-gradient(to bottom, rgba(0, 100, 0, 0.1), rgba(0, 100, 0, 0.1)); */
+    }
+
+    .imagen_facultad img {
+        border-bottom: 6px solid #006400;
+        /* Línea verde en la parte de abajo */
+    }
+
+    .imagen_facultad img,
+    .box-facultad {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .nombre-facultad {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nombre-facultad span {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        /* Medium */
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-facultad {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .before-slide,
+    .after-slide {
+        color: #025102;
+        cursor: pointer;
+    }
+
+    .pagination-facultades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedor-facultad {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-x: auto;
+        /* Scroll horizontal */
+        overflow-y: hidden;
+        /* Evita el scroll vertical */
+        scrollbar-width: none;
+        /* Oculta la barra en Firefox */
+        -ms-overflow-style: none;
+        /* Oculta la barra en Edge e Internet Explorer */
+    }
+
+    .contenedor-facultad::-webkit-scrollbar,
+    .contenedor-noticia::-webkit-scrollbar {
+        display: none;
+    }
+
+    .box-facultad {
+        margin: 0px;
+    }
+
+    .box-facultad img {
+        width: 91dvw;
+        object-fit: cover;
+        /* Recorta la imagen manteniendo la proporción */
+    }
+
+    .contenedor-titulos span {
+        font-family: "Poppins", serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 0.9375rem;
+        color: #929292;
+        word-wrap: break-word;
+        /* Esto asegura que las palabras largas se dividan si no caben en una línea */
+        overflow-wrap: break-word;
+        /* También asegura el ajuste automático en palabras largas */
+        display: inline-block;
+        /* Esto permite que el span ocupe todo el ancho disponible */
+        width: 100%;
+        /* Asegura que el span ocupe todo el ancho del contenedor */
+    }
+
+    .contenedor-noticia {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 11px;
+        overflow-x: auto;
+        /* Permite el desplazamiento horizontal */
+        scroll-snap-type: x mandatory;
+        /* Suaviza el desplazamiento */
+        scrollbar-width: none;
+        /* Oculta la barra en Firefox */
+        -ms-overflow-style: none;
+        /* Oculta la barra en Edge e Internet Explorer */
+        scroll-behavior: smooth;
+        /* Suaviza el desplazamiento */
+    }
+
+    .box-news {
+        flex: 0 0 calc(50% - 5px);
+        /* Cada noticia ocupará el 50% del ancho del contenedor */
+        max-width: calc(50% - 5px);
+        /* Evita que se expandan demasiado */
+        scroll-snap-align: start;
+    }
+
+    .box-news img {
+        width: 100%;
+        height: 33%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .box-news span {
+        display: block;
+        font-weight: 500;
+        line-height: 25px;
+        font-size: 0.875rem;
+        letter-spacing: 0.01em;
+        text-align: justify;
+        hyphens: auto;
+        word-spacing: -1px;
+        text-align-last: left;
+    }
+
+
+    .pagination-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: white;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .dot-active {
+        background-color: black;
+    }
+
+    /* === END PREGRADO - NUESTRA FACULTADES === */
+
+    /* ======================= */
+    /* TESTIMONIOS */
+    /* ======================= */
+
+    .logo-superior {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 10;
+    }
+
+    .logo-unu {
+        width: 210px;
+        height: auto;
+    }
+
+
+    .play-icono-individual {
+        position: absolute;
+        bottom: 1rem;
+        top: 465px;
+        left: 1rem;
+        z-index: 10;
+    }
+
+    .play-icono-individual img {
+        width: 28px;
+        height: 28px;
+        height: auto;
+    }
+
+
+    .testimonios-section {
+        padding: 2rem;
+        background-color: #fff;
+    }
+
+    .testimonios-header {
+        display: flex;
+        text-align: left;
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .testimonios-header h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 39px;
+    }
+
+    .icon-flecha {
+        color: #006400;
+        margin-right: 5px;
+        font-size: 26px;
+    }
+
+    .left-th-1 {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .testimonios-highlight {
+        font-weight: bold;
+        font-size: 35px;
+        color: #018d39;
+    }
+
+    .testimonios-header p {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        color: #050505;
+    }
+
+    .titulo-testimonio {
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .testimonios-carousel-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .testimonios-carousel {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        max-width: 320px;
+        scroll-behavior: smooth;
+        position: relative;
+    }
+
+    .testimonio-card {
+        min-width: 100%;
+        max-width: 100%;
+        flex-shrink: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .testimonios-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .imagen-fondo-testimonio {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .contenido-superpuesto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);
+        justify-content: space-between;
+        color: white;
+    }
+
+    .textos-testimonio {
+        margin-top: auto;
+    }
+
+    .textos-testimonio h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .textos-testimonio p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .testimonios-arrow {
+        background: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .testimonios-prev {
+        left: -32px;
+    }
+
+    .testimonios-next {
+        right: -32px;
+    }
+
+    .testimonios-arrow img {
+        width: 40px;
+        height: auto;
+    }
+
+    .video-testimonio {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    /* ======================= */
+    /* ENLACES DE INTERÉS - Scroll automático animado */
+    /* ======================= */
+
+    @keyframes scrollEnlacesInteres {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .scroll-wrapper-enlaces h2 {
+        position: relative;
+        text-align: center;
+    }
+
+    .scroll-wrapper-enlaces h2::after {
+        content: "";
+        width: 30px;
+        height: 5px;
+        background-color: #006400;
+        position: absolute;
+        bottom: 2px;
+        left: 92px;
+        transform: translateX(-50%);
+        border-radius: 15%;
+    }
+
+    .scroll-wrapper-enlaces {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .scroll-container-enlaces {
+        display: flex;
+        width: max-content;
+        animation: scrollEnlacesInteres 40s linear infinite;
+    }
+
+    .scroll-item {
+        flex: 0 0 auto;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-item img {
+        max-width: 200px;
+        max-height: 120px;
+        object-fit: contain;
+    }

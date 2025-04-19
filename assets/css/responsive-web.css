@@ -1,0 +1,100 @@
+@media screen and (min-width: 992px) {
+  .logo-main a img {
+    height: 82px;
+    width: 368px;
+  }
+
+  .portal-transparencia a img {
+    width: 135px;
+    height: 69px;
+  }
+
+  .data-informacion {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 0px 10px;
+    gap: 100px;
+    justify-content: space-between;
+  }
+
+
+  .libro-reclamaciones {
+    width: 16dvw;
+    height: 20dvh;
+  }
+
+  /*Footer*/
+  .text-footer {
+    width: 50%;
+  }
+
+  .box-linkText {
+    justify-content: space-around;
+  }
+
+  .line_uno {
+    left: 109px;
+    top: 55%;
+    height: 365px;
+  }
+
+  .line_dos {
+    top: 45%;
+    left: 847px;
+    height: 280px;
+  }
+
+  .lista-uno {
+    padding: 3px 9px 6px 60px;
+  }
+
+  .barra-informaciones {
+    gap: 405px;
+    justify-content: space-around;
+  }
+
+  .box-socialMedia {
+    gap: 65px;
+  }
+
+  .scroll-wrapper-enlaces h2::after {
+    left: 462px;
+  }
+
+  /* UNU INFORMA */
+  .contenedor-titulos h2, .contenedor-titulos span {
+    justify-content: left;
+  }
+
+  .green-linear {
+    left: 0;
+  }
+  /* Testimonio alumnos video */
+  .testimonios-arrow {
+    display: none;
+  }
+
+  .testimonios-carousel {
+    overflow: visible;
+    display: block;
+    width: auto;
+    max-width: none;
+    scroll-behavior: auto;
+    position: static;
+  }
+
+  .th-1 {
+    width: auto;
+  }
+
+  .testimonios-header {
+    justify-content: center;
+  }
+
+  .th-2 {
+    width: 30%;
+    font-size: 24px;
+    margin-left: 15%;
+  }
+}
