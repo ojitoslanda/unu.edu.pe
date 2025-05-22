@@ -1,3 +1,3 @@
 # Diseño web | Universidad nacional de Ucayali
 
-ojitoslanda.github.io/unu.edu.pe/
+<a href="ojitoslanda.github.io/unu.edu.pe/" target="_black"> ojitoslanda.github.io/unu.edu.pe/ </a>
