@@ -1,0 +1,241 @@
+@media screen and (min-width: 1600px) {
+  .line_dos {
+    left: 1077px !important;
+  }
+  .line_uno {
+    left: 190px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo-main a img {
+    height: 82px;
+    width: 368px;
+  }
+
+  .portal-transparencia a img {
+    width: 135px;
+    height: 69px;
+  }
+
+  .data-informacion {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 0px 10px;
+    gap: 100px;
+    justify-content: space-between;
+  }
+
+
+  .libro-reclamaciones {
+    width: 16dvw;
+    height: 20dvh;
+  }
+
+  /*Footer*/
+  .text-footer {
+    width: 50%;
+  }
+
+  .box-linkText {
+    justify-content: space-around;
+  }
+
+  .line_uno {
+    left: 109px;
+    top: 55%;
+    height: 365px;
+  }
+
+  .line_dos {
+    top: 45%;
+    left: 847px;
+    height: 280px;
+  }
+
+  .lista-uno {
+    padding: 3px 9px 6px 60px;
+  }
+
+  .barra-informaciones {
+    gap: 405px;
+    justify-content: space-around;
+  }
+
+  .box-socialMedia {
+    gap: 65px;
+  }
+
+
+
+  .scroll-wrapper-enlaces h2::after {
+    content: "";
+    width: 40px;
+    height: 6px;
+    background-color: #006400;
+    position: absolute;
+    left: 42.8%;
+    transform: translateX(-50%);
+    top: 100%; /* para colocarlo justo debajo del texto */
+    margin-top: 5px; /* espacio entre el texto y la línea */
+    border-radius: 10px;
+}
+
+  /* UNU INFORMA */
+  .contenedor-titulos h2,
+  .contenedor-titulos span {
+    justify-content: left;
+  }
+
+  .textPRE,
+  .textNF {
+    justify-content: center !important;
+  }
+
+  .green-linear-facultades {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0 !important;
+  }
+
+
+  .green-linear {
+    left: 0;
+  }
+
+  .box-news {
+    flex: 0 0 calc(20% - 5px);
+    max-width: calc(25% - 4px);
+  }
+
+  /* FACULTADES  */
+
+  .nuestra-facultades-lista {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contenedor-facultad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+  }
+
+  .box-facultad {
+    width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .box-facultad:hover {
+    transform: scale(1.03);
+  }
+
+  .imagen_facultad img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-bottom: 4px solid #4CAF50;
+    /* puedes cambiar el color */
+  }
+
+  .nombre-facultad span {
+    display: block;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .pagination-facultades {
+    display: none;
+  }
+
+  .textPRE {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .imagen_facultad img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  /* Testimonio alumnos video */
+  .testimonios-arrow {
+    display: none;
+  }
+
+  .testimonios-carousel {
+    overflow: visible;
+    display: block;
+    width: auto;
+    max-width: none;
+    scroll-behavior: auto;
+    position: static;
+  }
+
+  .th-1 {
+    width: auto;
+  }
+
+  .testimonios-header {
+    justify-content: center;
+  }
+
+  .th-2 {
+    width: 30%;
+    font-size: 24px;
+    margin-left: 15%;
+  }
+
+
+
+
+  /* MISION Y VISION */
+
+  .misionvision {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  /* .dd-input+.dd-menu {
+    display: block;
+  }
+
+  .dd-menu li {
+    border: 0 solid;
+  } */
+
+  .dropdown-toggle {
+    width: 48vw;
+  }
+
+
+  /* scoll de rectores */
+
+  .descripcion-autoridad p {
+    width: 100%;
+    margin-top: 17px;
+    font-size: 25px;
+  }
+
+  .autoridades {
+    top: 60%;
+    left: 65%;
+  }
+
+  .texto-autoridad h2 {
+    font-size: 43px;
+  }
+}

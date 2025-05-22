@@ -1,0 +1,30 @@
+@media screen and (min-width: 992px) {
+    .navbar__links {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .show-nav .navbar__links {
+        width: 26dvw;
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .navbar__links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .offcanvas-backdrop.show {
+        opacity: .7;
+    }
+
+    .offcanvas-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+    }
+}

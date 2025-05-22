@@ -1,0 +1,344 @@
+@media screen and (min-width: 768px) {
+
+  .portal-transparencia a img {
+
+    width: 20%;
+  }
+
+  .logo-main a img {
+    width: 55%;
+  }
+
+  #menu_unu,
+  #user_unu,
+  #repositorios_unu {
+    display: block;
+    font-size: 1rem;
+    margin-left: 12px;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+  }
+
+  .group-button-navbar {
+    top: 145px;
+  }
+
+  .group-button-navbar button {
+    width: 185px;
+    height: 50px;
+    justify-content: flex-start
+  }
+
+  .box-linkText {
+    flex-direction: row;
+  }
+
+  .box-linkText_dos h2,
+  .box-linkText_uno h2 {
+    font-size: 30px;
+  }
+
+  .lista-uno {
+    padding: 3px 9px 6px 30px;
+  }
+
+  .lista-uno li {
+    font-weight: 400;
+  }
+
+  .line_dos {
+    top: 49%;
+    left: 372px;
+    height: 390px;
+  }
+
+  .line_uno {
+    top: 54%;
+    left: 16px;
+    height: 452px;
+  }
+
+  .libro-reclamaciones {
+    width: 23dvw;
+    height: 11dvh;
+    border: 1px solid #CAC9C9;
+  }
+
+  .box-socialMedia {
+    flex-direction: row;
+  }
+
+  .box-contactanos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  .text-socialMedia span,
+  .bc-text span {
+    font-size: 22px;
+  }
+
+  .icono-socialMedia {
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .icono-socialMedia a,
+  .bc-icono a {
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 9px;
+  }
+
+  .bc-icono i {
+    margin-top: 8px;
+    font-size: 34px;
+  }
+
+  .box-socialMedia {
+    gap: 14px;
+    align-items: center;
+  }
+
+  .data-informacion {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 0px 10px;
+    gap: 100px;
+    align-items: center;
+  }
+
+  /* Autoridades */
+  .autoridades {
+    top: 64%;
+    left: 66%;
+  }
+
+  .texto-autoridad h2 {
+    font-size: 25px;
+  }
+
+  .texto-autoridad h3 {
+    font-size: 17px;
+  }
+
+  .descripcion-autoridad p {
+    margin-top: 15px;
+    width: 450px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: right;
+  }
+
+  .dropdown-toggle {
+    padding: 15px 20px;
+    font-size: 28px;
+    width: 96vw;
+  }
+
+  .dd-menu li {
+    font-size: 24px;
+  }
+
+  .video-container iframe {
+    width: 700px;
+    height: 400px;
+  }
+
+  /* Nuestra facultades */
+  .contenedor-titulos h4 {
+    text-align: center;
+  }
+
+  .green-linear-facultades {
+    left: 180px !important;
+  }
+
+  .box-facultad img {
+    width: 47dvw;
+    height: 22vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .nombre-facultad span {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* UNU INFORMA */
+  .contenedor-titulos h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor-titulos {
+    margin-bottom: 30px;
+  }
+
+  .green-linear {
+    content: '';
+    width: 40px;
+    height: 7px;
+    background-color: rgba(0, 100, 0, 0.8);
+    border-radius: 10px;
+    position: relative;
+    left: 258px;
+  }
+
+  .contenedor-titulos span {
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #929292;
+    word-wrap: break-word;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .box-news img {
+    width: 360px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .box-news span {
+    display: block;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -1px;
+    text-align-last: left;
+  }
+
+  .pagination-dots {
+    padding: 40px;
+  }
+
+  /* TESTIMONIO DE LOS ESTUDIANTES */
+  .testimonios-header {
+    flex-direction: row;
+  }
+
+  .testimonios-carousel {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    max-width: 640px;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+
+
+  .testimonios-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .testimonio-card {
+    min-width: 310px;
+    max-width: 310px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Enlaces de Interés */
+  .scroll-wrapper-enlaces h2 {
+    margin-top: 34px;
+    font-size: 34px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .scroll-wrapper-enlaces h2::after {
+    content: "";
+    width: 40px;
+    height: 6px;
+    background-color: #006400;
+    position: absolute;
+    top: 32px;
+    transform: translateX(340%);
+    border-radius: 10px;
+  }
+
+  .testimonios-header p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonios-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .th-1 {
+    width: 75%;
+  }
+
+  .th-2 p {
+    font-size: 18px;
+  }
+
+  .icon-flecha {
+    font-size: 55px;
+  }
+
+  .titulo-testimonio {
+    font-size: 35px;
+  }
+
+  .left-th-1 {
+    align-items: center;
+  }
+
+  .testimonios-highlight {
+    font-size: 45px;
+  }
+
+  .testimonios-prev {
+    left: 5px;
+
+  }
+
+  .testimonios-next {
+    right: 5px;
+  }
+
+  /*Footer*/
+  .data-info-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .data-info-2 {
+    margin-left: 4rem;
+  }
+
+  .barra-informaciones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+}
